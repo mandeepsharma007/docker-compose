@@ -3,7 +3,7 @@
 ### Docker compose overview 
 
 - Compose is a tool for defining and running multi-container Docker applications. 
-- Using a YAML file "Docker-compose.yaml" by default, you can configure your application's as services.
+- Using a YAML file "docker-compose.yaml" by default, you can configure your application's as services.
 - A single command can create and start all the services in one go.
 - Compose works in all environments: production, staging, development, testing, as well as with CI integration.
 
@@ -20,3 +20,9 @@
 2. $ sudo chmod +x /usr/local/bin/docker-compose
 3. $ docker-compose --version
 ```
+### Features of compose 
+
+- Using Project name you can create multiple isolated environments Dev, test , UAT , Live ... on a single host. 
+- Preserve volume data when containers are created
+- Only recreate containers that have changed
+- Variables and moving a composition between environments
