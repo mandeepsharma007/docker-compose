@@ -1,2 +1,22 @@
-# docker-compose
-Docker compose 
+# Docker-compose
+####
+### Docker compose overview 
+
+- Compose is a tool for defining and running multi-container Docker applications. 
+- Using a YAML file "Docker-compose.yaml" by default, you can configure your application's as services.
+- A single command can create and start all the services in one go.
+- Compose works in all environments: production, staging, development, testing, as well as with CI integration.
+
+#### Three-steps of compose process
+1. Define your app’s environment with a Dockerfile so it can be reproduced anywhere.
+
+2. Define the services that make up your app in docker-compose.yml so they can be run together in an isolated environment.
+
+3. Finally, run docker-compose up -d and an entire applications inside containers will start.
+
+#### Steps to install compose on Linux 
+```
+1. $ sudo curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+2. $ sudo chmod +x /usr/local/bin/docker-compose
+3. $ docker-compose --version
+```
