@@ -26,3 +26,12 @@
 - Preserve volume data when containers are created
 - Only recreate containers that have changed
 - Variables and moving a composition between environments
+
+### Compose prominent commands 
+- docker-compose build
+- docker-compose up/down 
+- docker-compose logs
+- docker-compose events
+- docker-compose pause/unpause
+- docker-compose scale web=2 worker=3
+- docker-compose start/stop/ps/rm
