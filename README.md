@@ -35,3 +35,14 @@
 - docker-compose pause/unpause
 - docker-compose scale web=2 worker=3
 - docker-compose start/stop/ps/rm
+
+### STACK
+
+A stack is a group of interrelated services that share dependencies, and can be orchestrated and scaled together. 
+
+## Deploy stack
+```
+$ docker stack deploy -c docker-compose.yml webtier
+$ docker stack ps webtier
+$ docker service ls
+```
